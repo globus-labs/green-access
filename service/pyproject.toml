@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "green_access_service"
+authors = [
+    {name = "Alok Kamatar", email = "alokvk2@uchicago.edu"},
+]
+description = "Package to experiment with green access allocation service"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "BSD-3-Clause"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "pyinstaller",
+    "tqdm",
+    "globus-compute-sdk @ git+https://github.com/AK2000/funcX@power_monitoring_new#subdirectory=compute_sdk",
+    "fancyimpute @ git+https://github.com/iskandr/fancyimpute.git",
+    "numpy",
+    "scikit-learn",
+    "pandas",
+    "aws-msk-iam-sasl-signer-python",
+    "faust-streaming[rocksdb]",
+    "redis",
+    "SQLAlchemy",
+    "uvicorn",
+    "databases[aiosqlite]",
+    "fastapi",
+    "diaspora-event-sdk",
+    "PyMySQL",
+    "httpx"
+]
+dynamic = ["version"]
+
+[tool.setuptools]
+packages = ["green_access_service"]

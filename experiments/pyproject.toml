@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "green_access_experiments"
+authors = [
+    {name = "Alok Kamatar", email = "alokvk2@uchicago.edu"},
+]
+description = "Package to experiment with green access allocation service"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "BSD-3-Clause"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "pyinstaller",
+    "tqdm",
+    "click",
+    "SQLAlchemy",
+    "green_access @ git+ssh://git@github.com/AK2000/green-access#subdirectory=client"
+]
+dynamic = ["version"]
+
+[project.scripts]
+green-access-expiriments = "green_access_experiments.main:cli"
+
+[tool.setuptools]
+packages = ["green_access_experiments"]

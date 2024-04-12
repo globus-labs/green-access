@@ -1,0 +1,50 @@
+[
+    {
+        "endpoint_id": "6754af96-7afa-4c81-b7ef-cf54587f02fa",
+        "display_name": "Desktop",
+        "nodes": 1,
+        "cores_per_node": 16,
+        "per_node_tdp": 65,
+        "embodied_carbon_rate": 376,
+        "carbon_intensity": 502,
+        "idle_power": 5.0,
+        "lat": 41.78958,
+        "long": -87.60093
+    },
+    {
+        "endpoint_id": "1a302149-7bef-40fe-9dc1-08ae540dc719",
+        "display_name": "Zen3 Chameleon",
+        "nodes": 1,
+        "cores_per_node": 128,
+        "per_node_tdp": 560,
+        "embodied_carbon_rate": 550,
+        "carbon_intensity": 389,
+        "idle_power": 120,
+        "lat": 41.78958,
+        "long": -87.60093
+    },
+    {
+        "endpoint_id": "d0ac23c8-a873-43e8-b5c4-0c7199092d0e",
+        "display_name": "Cascadelake Chameleon",
+        "nodes": 1,
+        "cores_per_node": 48,
+        "per_node_tdp": 410,
+        "embodied_carbon_rate": 81,
+        "carbon_intensity": 502,
+        "idle_power": 136,
+        "lat": 41.78958,
+        "long": -87.60093
+    },
+    {
+        "endpoint_id": "a02544c2-997d-4169-a8e3-b5d676d9e661",
+        "display_name": "Icelake Chameleon",
+        "nodes": 1,
+        "cores_per_node": 80,
+        "per_node_tdp": 410,
+        "embodied_carbon_rate": 512,
+        "carbon_intensity": 389,
+        "idle_power": 190,
+        "lat": 41.78958,
+        "long": -87.60093
+    }
+]
